@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-scroll';
-
+import logo from '../src/assets/img/image1.png';
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="../src/assets/img/image1.png" 
+          src={logo}
           alt="Woman touching face" 
           className="h-full object-cover object-center"
         />
